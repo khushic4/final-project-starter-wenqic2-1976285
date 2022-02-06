@@ -16,10 +16,7 @@
 |---------------| --------------
 |Code name | 006 |
 |Project title| Investigation of the alive size of the HIV/AIDS epidemic from 1990 - 2020. |
-|Authors | Khushi Chauhan, khushic4@uw.edu
-Wenqing Cao, wenqic2@uw.edu
-Andy Cerekja, acerekja@uw.edu
-Parker Huang, phuang20@uw.edu |
+|Authors | Khushi Chauhan, khushic4@uw.edu; Wenqing Cao, wenqic2@uw.edu; Andy Cerekja, acerekja@uw.edu; Parker Huang, phuang20@uw.edu |
 |Affiliation |  AC-6 - INFO-201: Technical Foundations of Informatics - The Information School - University of Washington |
 |Date | Winter 2022|
 |Abstract | What we care about is the survival rate of patients infected with AIDS. This question is important because it can help scientists investigate the change pattern of this disease. AIDS usually have long incubation periods and serious complications. Investigation of the survival rate and time period can help us better understand the incubation periods. To address the question, we will focus on the number of alived patient and area distribution factors through 1990-2020 to analyze the disease. |
