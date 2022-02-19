@@ -25,5 +25,9 @@ ggplot(hivdata, aes(year, people_with_hiv)) + geom_line() +
   labs(x = "Year", y = "Number of people living with HIV", title = "Total People Living With HIV Each Year")
 
 
+# This graph show how the global number of people with HIV increase from 1990 to 2020. This graph shows that 
+# the number of HIV cases increased pretty quickly from 1990 to about two thousand and then it slowed down
+# significantly. This graph also show that around 2008 or 2009 the number cases started to pick up again,
+# but did not get anywhere close to where it was in the 90s.
 
 
