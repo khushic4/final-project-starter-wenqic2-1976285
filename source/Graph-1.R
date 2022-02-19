@@ -1,7 +1,7 @@
 library(ggplot2)
 library(dplyr)
 library(tidyr)
-data <- ("/users/parkerhuang/documents/finalproject/final-project-starter-wenqic2-1976285/data/data-2.csv")
+data <- ("https://raw.githubusercontent.com/info-201a-wi22/final-project-starter-wenqic2-1976285/main/data/data-2.csv")
 HIVdata <- read.csv(data, header = TRUE)
 
 colnames(HIVdata)<-HIVdata[1,]
