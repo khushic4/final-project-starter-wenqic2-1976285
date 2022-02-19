@@ -12,9 +12,10 @@ hivdata_2 <- HIVdata%>%
   
 
 hivdata <- hivdata_2 %>%
-  filter(`WHO region` == "Global")%>%
-  mutate(people_with_hiv = gsub("\\[.*" ,"",hivdata$Total_People_Living_With_HIV))%>%
-  mutate(people_with_hiv = gsub(" ", "", hivdata$people_with_hiv))
+  filter(`WHO region` == "Global")
+  
+hivdata$people_with_hiv <- gsub("\\[.*" ,"",hivdata$Total_People_Living_With_HIV)
+hivdata$people_with_hiv <- gsub(" ", "", hivdata$people_with_hiv) 
   
 hivdata$year <- as.numeric(hivdata$year)
 hivdata$people_with_hiv <- as.numeric(hivdata$people_with_hiv)
