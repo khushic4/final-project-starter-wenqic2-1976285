@@ -1,11 +1,9 @@
-library(tidyverse)
 library(tidyr)
-library(RcppRoll)
 library(stringr)
 library(dplyr)
 
 
-lives <- read.csv("data.csv", header = T)
+lives <- read.csv("data-2.csv", header = T)
 colnames(lives) <- lives[1,]
 lives <- lives[-1,]
 global_lives <- lives %>%
@@ -20,13 +18,6 @@ global_lives <- lives %>%
   select(-lives_with_hiv)
 
 View(global_lives)
-
-
-
-
-  
-
-
 
 
 
