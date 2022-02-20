@@ -5,17 +5,27 @@ date: "2/18/2022"
 output: html_document
 ---
 
+
 ```{r setup, include=FALSE}
-library(knitr)
-library(dplyr)
-library(ggplot2)
-library(stringr)
-library(tidyr)
-source("final-project-starter-wenqic2-1976285/source/Graph-1.R")
-source("final-project-starter-wenqic2-1976285/source/Graph-2.R")
-source("final-project-starter-wenqic2-1976285/source/table-p02.R")
-source("final-project-starter-wenqic2-1976285/data/summary_script.R")
+#knitr::opts_chunk$set(echo = TRUE)
+library("knitr")
+source("source/summary_script.R")
+source("source/Graph-1.R")
+source("source/Graph-2.R")
+source("source/table-p02.R")
+library("dplyr")
+library("ggplot2")
+library("tidyr")
+library("lintr")
+library("plotly")
+library("leaflet")
 ```
+
+``` {r dataset, echo=FALSE}
+WHO_HIV <- read.csv(file = "data(1).csv",
+                          stringsAsFactors = FALSE)
+```
+
 
 #### Affiliation 
 AC-6 - INFO-201: Technical Foundations of Informatics - The Information School - University of Washington 
@@ -46,6 +56,14 @@ While we are given access to an absolutely massive database of information on ou
 
 
 ## Summary
+``` {r summary_info, echo=FALSE}
+summary_info <- get_source_expressions(summary_info)
+```
+The summary values we chose to focus on were the following; the total number of people living with HIV in 2020, the cumulative sum of people living with HIV in Africa, the cumulative sum of people living with HIV globally, the WHO region with the most people living with HIV, and the number of people living with HIV in 2019. All of this information would allow someome to analyze the dataset and sort these values into a table, chart, or other method of data organization. We chose to focus on one out of two of the datasets, specifically, the dataset that organized the numbers of people living with HIV by WHO region. This allows a viewer to understand the numbers regionally, and not by country, where some data is unavailable. It is more inclusive and holistic overall. 
+## Summary Table
+```{r summary_table, echo=FALSE, message=FALSE}
+
+```
 
 
 ## Table
