@@ -5,14 +5,18 @@ date: "2/18/2022"
 output: html_document
 ---
 
+install.packages("rmarkdown)
 
 ```{r setup, include=FALSE}
 #knitr::opts_chunk$set(echo = TRUE)
+list.files()
 library("knitr")
-source("source/summary_script.R")
-source("source/Graph-1.R")
-source("source/Graph-2.R")
-source("source/table-p02.R")
+
+##source("../source/summary-script.R")
+source("https://raw.githubusercontent.com/info-201a-wi22/final-project-starter-wenqic2-1976285/main/source/summary_script.R")
+source("../source/Graph-1.R")
+source("../source/Graph-2.R")
+source("../source/table-p02.R")
 library("dplyr")
 library("ggplot2")
 library("tidyr")
@@ -22,7 +26,7 @@ library("leaflet")
 ```
 
 ``` {r dataset, echo=FALSE}
-WHO_HIV <- read.csv(file = "data(1).csv",
+WHO_HIV <- read.csv(file = "source/data (1).csv",
                           stringsAsFactors = FALSE)
 ```
 
